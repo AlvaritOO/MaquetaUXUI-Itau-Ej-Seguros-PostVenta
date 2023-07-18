@@ -82,9 +82,13 @@ a {
     height: 48px;
     line-height: 23px;
 
-    // &:disabled{
-    //     background-color: #D9D3CF !important;
-    // }
+}
+
+.btn-primary-azul {
+    color: #007AB7;    
+    border-bottom: 3px solid #007AB7;
+    font-size: 18px;
+
 }
 
 .btn-primary {
@@ -120,11 +124,6 @@ a {
     background-color: rgba(183, 28, 28, 0.7);
 }
 
-.hr {
-    width: 100%;
-    border: 0.5px solid #D9D3CF;
-    display: inline-block;
-}
 
 .table-striped>tbody>tr:nth-child(0n+1)>td,
 .table-striped>tbody>tr:nth-child(0n+1)>th {
