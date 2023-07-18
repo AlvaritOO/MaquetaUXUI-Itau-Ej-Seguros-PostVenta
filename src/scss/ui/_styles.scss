@@ -82,14 +82,17 @@ a {
     height: 48px;
     line-height: 23px;
 
+    .btn-primary-azul {
+        color: #007AB7 !important;    
+        border-bottom: 1px solid var(--transversal-alertas-apoyo-y-links, #007AB7) !important;
+        display: flex !important;
+        padding: 0px 4px 2px 0px !important;
+        justify-content: center !important;
+        align-items: baseline !important;
+        gap: 4px !important;
+    }
 }
 
-.btn-primary-azul {
-    color: #007AB7;    
-    border-bottom: 3px solid #007AB7;
-    font-size: 18px;
-
-}
 
 .btn-primary {
     color: $white;
