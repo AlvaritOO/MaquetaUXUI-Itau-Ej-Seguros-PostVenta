@@ -1,0 +1,72 @@
+@use '../custom' as *;
+
+.log-ejecutivo {
+    border-radius: 22px;
+    border: 1px solid #EFE9E5;
+    padding: 4px;
+    color: #231D19;
+}
+
+.logo-itau {
+    border-right: 1px solid #ccc;
+    margin-right: 19px;
+}
+
+.log-ejecutivo img {
+    width: 30px;
+}
+
+.nav-itau {
+    background-color: $light;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.nav-itau div ul li.nav-item .nav-link {
+    padding: 8px 40px;
+}
+
+.nav-itau li a{
+    color: $textos;
+}
+
+.nav-itau a.nav-link.active {
+    border-bottom: 4px solid $naranja;
+    color: $naranja;
+}
+
+.dropdown-toggle::after {
+    display: none; //por defecto inline cuando se use
+    content: "";
+    width: 30px;
+    padding: 1px 7px;
+    background-position: center;
+    background-position-y: 4px;
+    border-top: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    background-image: url(../img/Chevron.svg);
+}
+
+
+.nav-tab1 {
+    background-color: $light;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.nav-tab1 div ul li.nav-item .nav-link {
+    padding: 8px 40px;
+}
+
+.nav-tab1 li a{
+    color: $textos;
+}
+
+.nav-tab1 a.nav-link.active {
+    border-bottom: 4px solid $naranja;
+    color: $naranja;
+}
+
+.active1 {
+    color: #231D19;
+}

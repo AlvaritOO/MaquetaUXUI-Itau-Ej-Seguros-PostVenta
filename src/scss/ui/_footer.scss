@@ -1,0 +1,25 @@
+@use '../custom' as *;
+
+section#footer {
+    background-color: $naranja;
+}
+
+.logo-footer{
+    //filter: grayscale(100%);
+}
+
+.text-footer-1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.text-footer-2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+}

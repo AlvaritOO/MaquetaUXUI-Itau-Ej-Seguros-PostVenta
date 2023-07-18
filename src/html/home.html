@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+        <img src="./src/img/logo-itau.svg" alt="Itaú" class="logo-cla pe-4">
+        <img src="./src/img/logo-bnp.svg" alt="BNP">
+      </a>
+
+      <div class="text-end">
+
+        <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./src/img/ic_log-ejecutivo.svg">
+          Hola, Leslie
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+
+      </div>
+    </header>
+  </div>
+  <nav class="navbar navbar-expand-lg nav-itau">
+    <div class="container">
+      <div class="collapse navbar-collapse text-white" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Contratar seguros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Ver seguros contratados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Denunciar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Nav Bar-->
+
+
+  <!--Body Buttom-->
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h1 class="mb-40 ps-4">¿Qué te gustaría hacer?</h1>
+      <div class="container__shadow">
+        <div class="d-flex align-items-center justify-content-center">
+          <a href="#" class="container__shadow__card col-2 me-4 text-center fw-bold"><img
+              src="./src/img/biometria.svg">Contratar</a>
+          <a href="cliente.html" class="container__shadow__card col-2 me-4 text-center fw-bold"><img
+              src="./src/img/comprobante.svg">Revisar seguros contratados</a>
+          <a href="#" class="container__shadow__card col-2 me-4 text-center fw-bold"><img
+              src="./src/img/notificación.svg">Denunciar</a>
+
+        </div>
+      </div>
+      <div class="container-fluid text-end mt-4 g-2 act-buttons">
+
+        <button type="button" class="btn btn-primary">Continuar</button>
+        <!-- EJEMPLO DE BOTON DE MODAL SESION POR EXPIRAR -->
+        <!-- BORRAR AL INTEGRAR -->
+        <button type="button" class="btn btn-primary-light ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Modal sesión por expirar</button>        
+      </div>
+    </div>
+
+  </main>
+
+  <!--Body Buttom-->
+  <!-- MODAL SESION POR EXPIRAR -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">        
+        <div class="modal-body text-center">
+          <button type="button" class="btn-close position-absolute top-0 end-0 mt-4 me-4" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <img src="src/img/icon-warning-red.svg" alt="" class="mt-13">
+          <p class="description mb-13 mt-4">Su sesión está por expirar</p>          
+          <div class="d-flex justify-content-center gap-4 mt-2">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar sesión</button>
+            <button type="button" class="btn btn-primary px-4">Quiero continuar</button>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+              src="./src/img/logo_itau_rgb.svg"></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="./src/img/cardif-byn.svg"></a>
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8
+                justify-content-end">© 2022 Banco Itaú. Todos los derechos
+            reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
+            Chile. </span>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
