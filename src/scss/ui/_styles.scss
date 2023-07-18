@@ -1,0 +1,249 @@
+@use '../custom' as *;
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    font-family: "ItauRegular";
+    src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+    background-color: $neutral;
+}
+
+
+
+h1 {
+    font-family: 'ItauDisplay', sans-serif;
+    /*Specify your font name here*/
+    font-size: 28px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 22px;
+    color: $textos;
+    font-family: 'ItauRegular';
+}
+
+
+.act-buttons {
+    margin-bottom: 72px;
+}
+
+
+
+a {
+    text-decoration: auto;
+
+    &:hover {
+        color: var(--bs-link-hover-color);
+    }
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-51 {
+    margin-bottom: 51px;
+}
+
+.container {
+    &__shadow {
+        padding: 24px;
+        height: auto;
+        background: $light;
+        box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+        border-radius: 16px;
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Open Sans';
+            align-items: center;
+            padding: 32px 24px;
+            gap: 22px;
+            text-decoration: none;
+            width: 189px;
+            height: 153px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
+            border-radius: 16px;
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    }
+}
+
+.btn {
+    font-size: 18px;
+    height: 48px;
+    line-height: 23px;
+
+    .btn-primary-azul {
+        color: #007AB7 !important;    
+        border-bottom: 1px solid var(--transversal-alertas-apoyo-y-links, #007AB7) !important;
+        display: flex !important;
+        padding: 0px 4px 2px 0px !important;
+        justify-content: center !important;
+        align-items: baseline !important;
+        gap: 4px !important;
+    }
+}
+
+
+.btn-primary {
+    color: $white;
+    border: 2px solid $naranja-hover;
+    font-size: 18px;
+    line-height: 23px;
+
+    &-light {
+        background-color: $light-04;
+        color: $azul;
+    }    
+}
+
+.alert{
+    .text{
+        font-size: 14px;
+    }
+}
+
+.alert-success {
+    border-top: 4px solid #008859;
+    background-color: #4CAC8B;
+}
+
+.alert-warning {
+    border-top: 4px solid #F1AE2F;
+    background-color: #F5C66D;
+}
+
+.alert-danger {
+    border-top: 4px solid #B71C1C;
+    background-color: rgba(183, 28, 28, 0.7);
+}
+
+
+.table-striped>tbody>tr:nth-child(0n+1)>td,
+.table-striped>tbody>tr:nth-child(0n+1)>th {
+    background-color: #F9F6F5;
+}
+
+.form-floating {
+
+    label {
+        width: auto;
+        padding: 8px 6px 8px 6px;
+        margin-left: 10px;
+        margin-top: 4px;
+        height: 40px;
+    }
+
+    .form-select{
+        line-height: 1.25;
+        padding-top: 18px;
+        padding-left: 16px;
+    }
+}
+
+.logo-cla {
+    border-right: 1px solid #ccc;
+    margin-right: 19px;
+}
+
+p {
+    margin: 0;
+}
+
+// Class color text
+.text-color-orange{
+    color: $naranja;
+}
+
+// Modal
+.modal{
+    .modal-body{
+        padding: 24px;
+    }   
+
+    .title{
+        font-family: 'ItauDisplay';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .description{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .modal-lg{
+        max-width: 700px !important;
+    }
+
+    .img-captcha{
+        width: 305px;
+    }
+}
+
+.content-renuncia{
+    width: 680px;
+    margin: 0 auto;
+
+    &__title{        
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    &__sub-title{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    &__card-cobertura{
+        border: 1px solid #CCCCCC;
+        border-radius: 8px;        
+        padding: 24px 0px 25px 40px;
+        font-size: 14px;
+        line-height: 23px;
+
+        strong{
+            font-size: 18px;
+            padding-right: 30px;
+        }
+    }
+
+}
+
+.content-renuncia-exito{    
+
+    &__icon{
+        width: 35px;
+        height: 35px;
+    }
+
+    &__title{
+        font-family: 'ItauDisplay';
+        font-weight: 600;
+    }
+}
+
+.accordion-item.itau {
+    margin-bottom: 8px;
+    border: 1px solid #EFE9E5 !important;
+    border-radius: 8px;
+}
+
+.accordion-button{
+    border-radius: 8px !important;
+}

@@ -276,7 +276,7 @@ section#contenedor-mayor{
 
 .divisor {
     height: 2px;
-    border-bottom: 1px solid #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
     margin: 20px 0px;
 }
 
@@ -329,7 +329,7 @@ a.btn-mas-monto {
 p.rango-pesos {
     margin-bottom: 0px;
     font-size: 14px;
-    color: $placeholder;
+    color: red;
 }
 
 p.uf-rango {
@@ -564,7 +564,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 .coberturas {
-    max-width: 948px;
+    max-width: 902px;
 }
 
 .contrato {
