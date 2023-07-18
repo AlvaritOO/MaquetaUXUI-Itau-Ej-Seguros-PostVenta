@@ -27526,6 +27526,10 @@ p {
   border-radius: 8px !important;
 }
 
+section#navBar {
+  background-color: #FFFFFF;
+}
+
 .log-ejecutivo {
   border-radius: 22px;
   border: 1px solid #EFE9E5;
@@ -27594,4 +27598,750 @@ p {
 
 .active1 {
   color: #231D19;
+}
+
+body {
+  font-family: "ItauRegular";
+  background-color: #FAF7F5;
+}
+
+h1 {
+  font-family: "ItauDisplay", sans-serif; /*Specify your font name here*/
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #56504C;
+}
+
+span, p, ul, li {
+  font-family: "ItauRegular";
+}
+
+.form-floating > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 1.75rem !important;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: var(--bs-modal-title-line-height);
+  color: #EC7000;
+}
+
+button.cerrar-modal {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+button.cerrar-modal-alerta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-item.itau {
+  margin-bottom: 8px;
+  border: 1px solid #EFE9E5 !important;
+  border-radius: 8px;
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 8px !important;
+}
+
+.color-primary {
+  color: #EC7000;
+}
+
+.color-info {
+  color: #4CAC8B;
+}
+
+.color-verde {
+  color: #4CAC8B;
+}
+
+.color-warning {
+  color: #F1AE2F;
+}
+
+.alert-verde {
+  border-left: 4px solid #008859;
+  background-color: #DEF0E9;
+}
+
+.alert-warning {
+  border-left: 4px solid #F1AE2F;
+  background-color: #FCEBCB;
+}
+
+.alert-danger {
+  border-left: 4px solid #B71C1C;
+  background-color: #CD6060;
+}
+
+.alert-info {
+  border-left: 4px solid #007AB7;
+  background-color: #DEEEF6;
+}
+
+.sombra-itau1 {
+  box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+}
+
+a.card-box {
+  text-decoration: none;
+}
+
+.card-plan {
+  border: 1px solid #EFE9E5;
+  border-radius: 8px;
+}
+
+.card-plan.sombra-itau1.active {
+  border: 3px solid #EC7000;
+}
+
+.card-plan.active .numero-plan {
+  background-color: #EC7000;
+  color: #FFFFFF;
+}
+
+.numero-plan {
+  color: #56504C;
+  background-color: #EFE9E5;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 12px 0px 12px 0px;
+  position: relative;
+  top: 5px;
+}
+
+img.check-plan {
+  position: relative;
+  top: 3px;
+  width: 100%;
+  height: 25px;
+  padding-left: 90%;
+}
+
+card.card-box {
+  cursor: pointer;
+}
+
+.card-plan.active .item-destacado {
+  background-color: #89837F;
+  color: #FFFFFF;
+}
+
+.titulo-seguro {
+  color: #EC7000;
+  font-size: 20px;
+}
+
+.item-destacado {
+  padding: 12px 6px;
+  margin: 8px 25px 23px 25px;
+  background-color: #EFE9E5;
+  border-radius: 15px;
+  color: #56504C;
+  font-size: 16px;
+}
+
+.pre-text {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.act-buttons {
+  margin-bottom: 72px;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 8px !important;
+}
+
+section#contenedor-mayor {
+  width: auto;
+  height: auto;
+}
+
+.body-buttom {
+  padding: 24px;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+  border-radius: 16px;
+}
+
+.body-buttom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 22px;
+  text-decoration: none;
+  width: 189px;
+  height: 153px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.btn-primary {
+  color: #fff;
+  border: 2px solid #BC5900;
+}
+
+.buscar-btn {
+  height: 47px;
+}
+
+.buscar-btn.active {
+  border-color: #003399;
+}
+
+.label-float {
+  position: relative;
+  top: 18px;
+  left: 8px;
+  color: #56504C;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+}
+
+.card-planes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 22px;
+  text-decoration: none;
+  width: 300px;
+  height: 368px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background: #FFFFFF;
+  border: 1px solid #EC7000;
+}
+
+.divisor {
+  height: 2px;
+  border-bottom: 2px solid #e2e2e2;
+  margin: 20px 0px;
+}
+
+.rango-pesos::before {
+  content: "$";
+}
+
+.rango-uf::after {
+  content: "UF";
+}
+
+small.rango-uf {
+  font-weight: 700;
+}
+
+.bubble {
+  background: #EC7000;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  position: relative;
+  border-radius: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-382%);
+  transform: translateX(-382%);
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #EC7000;
+  top: -1px;
+  left: 50%;
+}
+
+a.btn-menos-monto {
+  position: relative;
+  left: -59px;
+  top: 85px;
+}
+
+a.btn-mas-monto {
+  position: relative;
+  top: 88px;
+  left: 65px;
+}
+
+p.rango-pesos {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: red;
+}
+
+p.uf-rango {
+  margin-bottom: 0px;
+}
+
+.input-uf {
+  position: relative;
+  top: 101px;
+  right: -38px;
+}
+
+.simulacion-gris {
+  margin-top: 46px;
+  background-color: #EFE9E5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.coberturas-adicionales-content {
+  height: 114px;
+}
+
+.custom-table thead th {
+  --bs-table-bg: #EFE9E5 !important;
+}
+
+.contratado {
+  background-color: #008859;
+}
+
+.pendiente {
+  background-color: #F1AE2F;
+}
+
+.caducado {
+  background-color: #56504C;
+}
+
+body {
+  background-color: #FAF7F5;
+}
+
+.row.progreso {
+  height: 56px;
+  background-color: #fff;
+  padding: 8px;
+  border-bottom: 2px solid #939598;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.title-seccion {
+  padding: 10px 51px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.progress {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: absolute;
+}
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #D9D3CF;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 3px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #EC7000;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+.progress .progress-value {
+  display: flex;
+  border-radius: 50%;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  color: #EC7000;
+  font-weight: 300;
+}
+.progress .progress-value div {
+  margin-top: 10px;
+}
+.progress .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+.progress[data-percentage="5"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="5"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="10"] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+.progress[data-percentage="10"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="15"] .progress-right .progress-bar {
+  animation: loading-3 1.5s linear forwards;
+}
+.progress[data-percentage="15"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="20"] .progress-right .progress-bar {
+  animation: loading-4 1.5s linear forwards;
+}
+.progress[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="25"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="25"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="30"] .progress-right .progress-bar {
+  animation: loading-6 1.5s linear forwards;
+}
+.progress[data-percentage="30"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="35"] .progress-right .progress-bar {
+  animation: loading-7 1.5s linear forwards;
+}
+.progress[data-percentage="35"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="40"] .progress-right .progress-bar {
+  animation: loading-8 1.5s linear forwards;
+}
+.progress[data-percentage="40"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="45"] .progress-right .progress-bar {
+  animation: loading-9 1.5s linear forwards;
+}
+.progress[data-percentage="45"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="50"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="50"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="55"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="55"] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="60"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="60"] .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="65"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="65"] .progress-left .progress-bar {
+  animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="70"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="70"] .progress-left .progress-bar {
+  animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="75"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="75"] .progress-left .progress-bar {
+  animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="80"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="80"] .progress-left .progress-bar {
+  animation: loading-6 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="85"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="85"] .progress-left .progress-bar {
+  animation: loading-7 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="90"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="90"] .progress-left .progress-bar {
+  animation: loading-8 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="95"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="95"] .progress-left .progress-bar {
+  animation: loading-9 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="100"] .progress-right .progress-bar {
+  animation: loading-10 1.5s linear forwards;
+}
+.progress[data-percentage="100"] .progress-left .progress-bar {
+  animation: loading-10 1.5s linear forwards 1.5s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(18);
+    transform: rotate(18deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(54);
+    transform: rotate(54deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+@keyframes loading-7 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(126);
+    transform: rotate(126deg);
+  }
+}
+@keyframes loading-8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-9 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(162);
+    transform: rotate(162deg);
+  }
+}
+@keyframes loading-10 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+.progress {
+  margin-bottom: 1em;
+}
+
+.accordion {
+  --bs-accordion-active-bg: #F3F0EF;
+}
+
+.accordion-custom-width {
+  width: 1016px !important;
+}
+
+.bg-neutral {
+  background-color: #FAF7F5;
+}
+
+.card-noactive {
+  border: 2px solid #FAF7F5;
+}
+
+.cardplan-size {
+  max-width: 348px !important;
+  border-radius: 8px;
+}
+
+.cobertura-fs {
+  font-size: 14px !important;
+}
+
+.shadow-active {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.18), 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.text-textos {
+  color: #56504C;
+}
+
+.coberturas {
+  max-width: 902px;
+}
+
+.contrato {
+  max-width: 1000px;
 }

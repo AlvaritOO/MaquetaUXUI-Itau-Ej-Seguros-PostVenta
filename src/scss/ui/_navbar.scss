@@ -1,5 +1,9 @@
 @use '../custom' as *;
 
+section#navBar {
+    background-color: $light;
+}
+
 .log-ejecutivo {
     border-radius: 22px;
     border: 1px solid #EFE9E5;
