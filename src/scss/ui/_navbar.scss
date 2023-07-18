@@ -22,16 +22,15 @@ section#navBar {
 
 .nav-itau {
     background-color: $light;
-    padding-bottom: 0px;
-    margin-bottom: 40px;
+
 }
 
 .nav-itau div ul li.nav-item .nav-link {
-    padding: 8px 40px;
+    padding: 18px 50px;
 }
 
 .nav-itau li a{
-    color: $textos;
+    color: $naranja;
 }
 
 .nav-itau a.nav-link.active {
@@ -56,6 +55,7 @@ section#navBar {
     background-color: $light;
     padding-bottom: 0px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .nav-tab1 div ul li.nav-item .nav-link {
@@ -69,6 +69,13 @@ section#navBar {
 .nav-tab1 a.nav-link.active {
     border-bottom: 4px solid $naranja;
     color: $naranja;
+    opacity: 1;
+}
+
+.nav-tab1 a.nav-link {
+    opacity: 0.5;
+    color: #939598;
+    border-bottom: 4px solid #939598;
 }
 
 .active1 {

@@ -11,15 +11,17 @@ $verde:  #4CAC8B;
 $neutral: #FAF7F5;
 $titulo-cabecera: #231D19;
 $textos: #56504C;
+$placeholder: #89837F;
+$bordes-card: #EFE9E5;
+$yellow:  #F5C66D;
 
 // Colores
 $primary: $naranja;
 $secondary: #003399;
 $success: $light-03;
-$info: $verde;
+$info: #007AB7;
 $light: #FFFFFF;
 $dark: $azul-hover;
-$bordes-card: #EFE9E5;
 
 
 //botones
@@ -27,35 +29,59 @@ $btn-border-width:  2px;
 $btn-padding-y: 10px;
 
 //inputs
-$form-floating-height: 48px;
-$form-floating-line-height: 1.5;
-$form-floating-padding-x: 16px;
-$form-floating-input-padding-t: 22px;
-// $form-floating-label-opacity: 1;
-$form-floating-label-transform:   scale(.85) translateY(-0.8rem) translateX(.15rem);
+$input-padding-y-lg: 11px;
+$input-font-size-lg: 1rem;
+$input-font-size: 0.9rem;
+$input-font-weight: normal;
 
-$spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 2.5,
-  7: $spacer * 3,
-  8: $spacer * 3.5,
-  9: $spacer * 4,
-  10: $spacer * 4.5,
-  11: $spacer * 5,
-  12: $spacer * 5.5,
-  13: $spacer * 6,
-);
+//Switches
+/* .form-switch .form-check-input {
+    width: 45px !important;
+    height: 30px !important;
+} */
 
+//form
+$form-floating-height: 3rem;
+
+//acordeon
+$accordion-border-color: $bordes-card;
+$accordion-border-radius: 8px;
+$accordion-inner-border-radius: 8px;
+$accordion-icon-color: $naranja;
+$accordion-button-icon: url(../img/ic_flecha.svg);
+
+//Tooltips
+$tooltip-bg:  #000000;
+
+//modal
+$modal-content-color: $textos;
+$modal-content-border-radius: 12px;
+$modal-inner-padding: 32px;
 
 //tipografias
 $headings-font-family: 'ItauDisplay';
 $headings-color:    $titulo-cabecera;
+
+$itautextpro: 'itauRegular';
+$itaudisplay: 'ItauDisplay';
+
+//alertas
+$alert-border-radius: 8px;
+
+//barras de progreso
+$position-values: (
+  0: 0,
+  25: 25%,
+  35: 30%,
+  50: 50%,
+  70: 65%,
+  75: 75%,
+  100: 100%
+);
+
+//Border
+$toast-border-radius:   8px;
+$border-radius: 8px;
 
 @font-face {
     font-family: 'ItauRegular';
@@ -73,13 +99,11 @@ body {
     src: url("../../src/fonts/ItauDisplayPro_W_Bd.woff2");
 }
 
+
+
+
+
+
 // Importar Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-
-//acordeon
-$accordion-border-color: $bordes-card;
-$accordion-border-radius: 8px;
-$accordion-inner-border-radius: 8px;
-$accordion-icon-color: $naranja;
-$accordion-button-icon: url(../img/ic_flecha.svg);
