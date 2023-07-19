@@ -570,3 +570,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .contrato {
     max-width: 1000px;
 }
+
+.cancelado {
+    background-color: #FCB6B6;
+}
+
+.en-proceso-r {
+    background-color: #FCEBCB;
+    color: #CA932B;
+}
+
+.border-estado {
+    border-radius: 2px;
+}
