@@ -583,3 +583,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .border-estado {
     border-radius: 2px;
 }
+
+.btn-disabled {
+    background-color: #D9D3CF !important;
+    color: #56504C !important;
+    border-color: #D9D3CF !important;
+}
