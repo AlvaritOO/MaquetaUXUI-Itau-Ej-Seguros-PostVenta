@@ -83,6 +83,11 @@ $position-values: (
 $toast-border-radius:   8px;
 $border-radius: 8px;
 
+//Year active naranja
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover {
+    background-image: -webkit-linear-gradient(top,#ec7000,#ec7000) !important;
+}
+
 @font-face {
     font-family: 'ItauRegular';
     src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
