@@ -10972,7 +10972,7 @@ button.cerrar-modal-alerta {
 
 .alert-danger {
   border-left: 4px solid #B71C1C;
-  background-color: #CD6060;
+  background-color: #F6E1E1;
 }
 
 .alert-info {
@@ -11078,7 +11078,7 @@ section#contenedor-mayor {
   height: auto;
   background: #FFFFFF;
   box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .body-buttom-card {
@@ -11640,6 +11640,18 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #D9D3CF !important;
   color: #56504C !important;
   border-color: #D9D3CF !important;
+}
+
+.btn-close-orange {
+  color: #EC7000;
+}
+
+.bg-green {
+  background-color: #4CAC8B;
+}
+
+.bg-blue {
+  background-color: #003399;
 }
 
 section#navBar {
