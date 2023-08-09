@@ -27,6 +27,14 @@ $dark: $azul-hover;
 //botones
 $btn-border-width:  2px;
 $btn-padding-y: 10px;
+//boton disabled
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+    color: #56504C !important;
+    pointer-events: none;
+    background-color: #D9D3CF !important;
+    border-color: #D9D3CF !important;
+    opacity: var(--bs-btn-disabled-opacity);
+}
 
 //inputs
 $input-padding-y-lg: 11px;
