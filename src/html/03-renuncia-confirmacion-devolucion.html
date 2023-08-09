@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../build/css/app.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+<!--NavBar-->
+<section id="navBar">
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg">
+
+      <div>
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+          <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+          <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+        </a>
+      </div>
+
+      <div class="text-end">
+
+        <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="../../build/img/ic_log-ejecutivo.svg">
+          Hola, Leslie
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z" fill="#231D19"/>
+            </svg>
+            
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+
+      </div>
+
+      <nav class="navbar navbar-expand-lg nav-itau">
+        <div class="container-fluid justify-content-around">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" href="#">Contratar Seguros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Ver Seguros Contratados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Denunciar un Siniestro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Mi Panel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Posiciónate como experto</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+  </div>
+</section>
+<!--NavBar fin-->
+
+  <!--Body Buttom-->
+  <main class="flex-shrink-0">
+    <div class="container">
+
+      <h1 class="my-5 ps-4">Renuncia al [Seguro de Vida]</h1>
+      <div class="body-buttom mb-4">
+        <div class="container" style="max-width: 820px;">
+          <h4 class="mb-5 mt-2 text-center">¿El cliente confirmará la renuncia del seguro?</h4>
+          <div class="body-buttom mx-auto" >
+            <div class="d-flex justify-content-center">
+              <svg class="me-5" width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M45.3574 36.2402C46.2871 37.8535 46.2734 39.4668 45.3164 41.0801C44.3867 42.6934 42.9922 43.5 41.1328 43.5H15.8672C14.0078 43.5 12.5996 42.6934 11.6426 41.0801C10.7129 39.4668 10.7129 37.8535 11.6426 36.2402L25.5059 12C26.1621 10.8242 27.1602 10.2363 28.5 10.2363C29.8398 10.2363 30.8379 10.8242 31.4941 12L45.3574 36.2402ZM27.6387 22.5V33H29.3613V22.5H27.6387ZM28.5 37.3887C28.8555 37.3887 29.1562 37.2656 29.4023 37.0195C29.6758 36.7461 29.8125 36.4316 29.8125 36.0762C29.8125 35.6934 29.6758 35.3789 29.4023 35.1328C29.1562 34.8867 28.8555 34.7637 28.5 34.7637C28.1445 34.7637 27.8301 34.8867 27.5566 35.1328C27.3105 35.3789 27.1875 35.6934 27.1875 36.0762C27.1875 36.4316 27.3105 36.7461 27.5566 37.0195C27.8301 37.2656 28.1445 37.3887 28.5 37.3887Z" fill="#EC7000"/>
+              </svg> 
+              <div>
+                <h4>El cliente quedará sin protección y no podrá utilizar sus 
+                  beneficios asociados.</h4>
+              </div>      
+            </div>
+          </div>
+          <div class="form-floating my-4">
+            <select class="form-select pb-1" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Seleccione</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label for="floatingSelect">Motivo de la renuncia</label>
+          </div>
+          <h5 class="mx-auto mb-4" >1.- Confirma la dirección de correo electrónico a la cual se enviará el comprobante de renuncia: </h5>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+            <label for="floatingInputValue">Correo Electrónico*</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="">
+            <label for="floatingInputValue">Confirme Correo Electrónico*</label>
+          </div>
+
+          <h5 class="mx-auto mb-4" >2.- ¿Como deseas validar la renuncia de tu cliente? </h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Cuenta Corriente
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end gap-4 my-5">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Volver</button>
+        <button type="button" class="btn btn-off px-4" id="continuarButton" disabled>Continuar</button>
+      </div>
+  </main>
+
+  <!--Body Buttom-->
+
+
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+              src="../../build/img/logo_itau_rgb.svg"></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="../../build/img/cardif-byn.svg"></a>
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8
+            justify-content-end">© 2022 Banco Itaú. Todos los derechos
+            reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
+            Chile. </span>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      const radio1 = $('#flexRadioDefault1');
+      const radio2 = $('#flexRadioDefault2');
+      const modal1 = $('#exampleModal');
+      const modal2 = $('#exampleModal2');
+  
+      radio1.on('change', function () {
+        modal1.modal('show');
+      });
+  
+      radio2.on('change', function () {
+        modal2.modal('show');
+      });
+      
+    });
+  </script>
+            
+</body>
+
+</html>
