@@ -133,23 +133,6 @@ a {
     background-color: #F9F6F5;
 }
 
-.form-floating {
-
-    label {
-        width: auto;
-        padding: 8px 6px 8px 6px;
-        margin-left: 10px;
-        margin-top: 4px;
-        height: 40px;
-    }
-
-    .form-select{
-        line-height: 1.25;
-        padding-top: 18px;
-        padding-left: 16px;
-    }
-}
-
 .logo-cla {
     border-right: 1px solid #ccc;
     margin-right: 19px;
@@ -190,51 +173,6 @@ p {
 
     .img-captcha{
         width: 305px;
-    }
-}
-
-.content-renuncia{
-    width: 680px;
-    margin: 0 auto;
-
-    &__title{        
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-    }
-
-    &__sub-title{
-        font-family: 'Open Sans';
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 25px;
-    }
-
-    &__card-cobertura{
-        border: 1px solid #CCCCCC;
-        border-radius: 8px;        
-        padding: 24px 0px 25px 40px;
-        font-size: 14px;
-        line-height: 23px;
-
-        strong{
-            font-size: 18px;
-            padding-right: 30px;
-        }
-    }
-
-}
-
-.content-renuncia-exito{    
-
-    &__icon{
-        width: 35px;
-        height: 35px;
-    }
-
-    &__title{
-        font-family: 'ItauDisplay';
-        font-weight: 600;
     }
 }
 
