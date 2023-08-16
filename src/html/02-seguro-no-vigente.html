@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../build/css/app.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <!--NavBar-->
+    <section id="navBar">
+      <div class="container">
+        <header
+          class="d-flex flex-wrap justify-content-md-between py-3 header-bg">
+  
+          <div>
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+              <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+              <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+            </a>
+          </div>
+  
+          <div class="text-end">
+  
+            <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../src/img/ic_log-ejecutivo.svg">
+              Hola, Leslie
+            </a>
+  
+          </div>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg nav-itau">
+          <div class="container-fluid justify-content-start ms-5">
+  
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contratar Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Ver Seguros Contratados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Denunciar un Siniestro</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+      </header>
+  
+      </div>
+    </section>
+    <!--NavBar fin-->
+
+  <!--Body Buttom-->
+  <main class="flex-shrink-0">
+    <div class="container">
+
+      <h1 class="mb-51 ps-4 my-5 mb-4">Datos del titular</h1>
+
+      <div class="col body-buttom mb-4">
+        <ul class="pt-1 mx-4 list-unstyled ms-0">
+          <li><b>Nombre completo:</b> Claudia Alejandra Aranda</li>
+          <li><b>RUT:</b> 16.345.789-0</li>
+          <li><b>Dirección:</b> Calle #123</li>
+          <li><b>Teléfono:</b> +56 98765432</li>
+          <li><b>Correo electrónico:</b> correo@correo.cl</li>
+        </ul>
+      </div>
+      <h1 class="mb-4 ps-4 mt-5">Seguros vigentes</h1>
+      <div class="col body-buttom">
+        <h1 class="mb-51 mt-2 mb-5">Seguro Vida</h1>
+        <ul class="ps-4 mt-6">
+          <li>Contratado el 30 de diciembre del 2022</li>
+          <li>Cuota mensual: UF 0,123 mes ($1.234 aprox)</li>
+        </ul>
+        <div class="container-fluid text-end mt-4 g-2 act-buttons">
+          <a href="detalle-seguros.html"><button type="button" class="btn btn-primary px-5">Ver detalle</button></a>
+          <button type="button" class="btn btn-outline-secondary ms-4">Descargar póliza</button>
+          <button type="button" class="btn btn-outline-secondary ms-4">Enviar póliza</button>
+        </div>
+        <div class="divisor"></div>
+        <h1 class="mb-51 mt-4 mb-5">Seguro Robo</h1>
+        <ul class="ps-4 mt-6">
+          <li>Contratado el 30 de diciembre del 2022</li>
+          <li>Cuota mensual: UF 0,123 mes ($1.234 aprox)</li>
+        </ul>
+        <div class="container-fluid text-end mt-4 g-2 act-buttons">
+          <a href="detalle-seguros.html"><button type="button" class="btn btn-primary px-5">Ver detalle</button></a>
+          <button type="button" class="btn btn-outline-secondary ms-4">Descargar póliza</button>
+          <button type="button" class="btn btn-outline-secondary ms-4">Enviar póliza</button>
+        </div>
+      </div>
+
+      <h1 class="mb-4 ps-4 mt-5">Seguros no vigentes</h1>
+      <div class="col body-buttom mb-4">
+          <!-- Tabla de resultados -->
+          <div class="container p-2">
+            <div class="table-responsive">
+              <table class="table table-striped custom-table align-middle">
+                <tbody>
+                  <tr class="align-middle">
+                    <th scope="col">Seguro</th>
+                    <th scope="col">Fecha de<br>
+                      contratación</th>
+                    <th scope="col">Fecha fin<br>
+                      de contrato</th>
+                    <th scope="col">N° de póliza</th>
+                    <th scope="col">N° de certificado</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Motivo</th>
+                  </tr>
+                  <tr>
+                    <td scope="row">Renta hospitalaria -
+                      Plan 1 Titular</td>
+                    <td>08/08/2019</td>
+                    <td>07/07/2023</td>
+                    <td>000444000</td>
+                    <td>00071100</td>
+                    <td>
+                      <div class="bg-danger text-white p-1 text-center border-estado">Rechazado</div>
+                    </td>
+                    <td>{Motivo renuncia}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Renta por hospítalización TMK -
+                      Plan 1 Adicional</td>
+                    <td>08/08/2023</td>
+                    <td>07/07/2023</td>
+                    <td>000444000</td>
+                    <td>00071100</td>
+                    <td>
+                      <div class="cancelado text-danger p-1 text-center border-estado">Cancelado</div>
+                    </td>
+                    <td>{Motivo renuncia}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Seguro mi hogar Flexible 
+                      - Plan 1</td>
+                    <td>08/08/2023</td>
+                    <td>07/07/2023</td>
+                    <td>000444000</td>
+                    <td>00071100</td>
+                    <td>
+                      <div class="pendiente p-1 text-center border-estado">En proceso</div>
+                    </td>
+                    <td>{Motivo renuncia}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Seguro Vida Pro - Plan 1</td>
+                    <td>08/08/2023</td>
+                    <td>07/07/2023</td>
+                    <td>000444000</td>
+                    <td>00071100</td>
+                    <td>
+                      <div class="bg-danger text-white p-1 text-center border-estado">Rechazado</div>
+                    </td>
+                    <td>{Motivo renuncia}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Desempleo Condell Banlinea 
+                      - Plan 1</td>
+                    <td>08/08/2023</td>
+                    <td>07/07/2023</td>
+                    <td>000444000</td>
+                    <td>00071100</td>
+                    <td>
+                      <div class="en-proceso-r p-1 text-center border-estado lh-1">En proceso de<br>revisión</div>
+                    </td>
+                    <td>{Motivo renuncia}</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Vida Consumo Condell Joven 
+                      - Plan 1</td>
+                    <td>08/08/2023</td>
+                    <td>07/07/2023</td>
+                    <td>000444000</td>
+                    <td>00071100</td>
+                    <td>
+                      <div class="caducado p-1 text-white text-center border-estado">Renunciado</div>
+                    </td>
+                    <td>{Motivo renuncia}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Paginador -->
+              <div class="d-flex justify-content-end">
+                <div>
+                  <select class="form-select py-2 me-2" style="width: auto; display: inline;"
+                    aria-label="Seleccionar cantidad de filas">
+                    <option selected>Mostrar 10</option>
+                    <option>Mostrar 20</option>
+                    <option>Mostrar 30</option>
+                  </select>
+                </div>
+                <div aria-label="Page navigation">
+
+                  <ul class="pagination justify-content-start">
+
+                    <li class="page-item ms-1">
+                      <a class="page-link p-2" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                      </a>
+                    </li>
+                    <li class="page-item col-2">
+                      <input type="text" class="form-control p-2 text-center" value="1">
+                    </li>
+                    <li class="page-item py-2 text-center">
+                      <span class="px-2">de 3</span>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link p-2" href="#" aria-label="Next">
+                        <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Tabla de resultados fin-->
+      </div>
+      <div class="container-fluid mt-6 g-2 act-buttons d-flex justify-content-end">
+        <button type="button" class="btn btn-success px-4 d-flex align-items-center text-secondary">
+          <img src="../../build/img/icon-arrow-back.svg" alt="Volver" class="me-1">
+          Volver a búsqueda de cliente
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!--Body Buttom-->
+
+
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+              src="../../build/img/logo_itau_rgb.svg"></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="../../build/img/cardif-byn.svg"></a>
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8
+            justify-content-end">© 2022 Banco Itaú. Todos los derechos
+            reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
+            Chile. </span>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+
+
+</body>
+
+</html>
