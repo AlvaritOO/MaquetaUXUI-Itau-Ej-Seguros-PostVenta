@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../build/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <!--NavBar-->
+  <section id="navBar">
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header-bg">
+
+        <div>
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
+            <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+          </a>
+        </div>
+
+        <div class="text-end">
+
+          <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../src/img/ic_log-ejecutivo.svg">
+            Hola, Leslie
+          </a>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg nav-itau">
+          <div class="container-fluid justify-content-around">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ver Seguros Contratados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Denunciar un Siniestro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi Panel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Posiciónate como experto</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </header>
+
+    </div>
+  </section>
+  <!--NavBar fin-->
+
+  <!--Contenido-->
+  <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
+    <div class="container">
+
+      <h1>Mi Panel</h1>
+      <h2 class="mb-40 text-muted">
+        Revisa aquí tus ventas realizadas, su estado y datos de contacto de tu cliente.
+      </h2>
+
+      <div class="col body-buttom">
+
+        <div class="row">
+          <div class="form-floating mt-3 col">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Buscar RUT del cliente">
+            <label for="floatingInput">RUT Cliente</label>
+          </div>
+          <div class="form-floating mt-3 col">
+            <input type="date" class="form-control" id="floatingInput">
+            <label for="floatingInput">Fecha de inicio</label>
+          </div>
+          <div class="form-floating mt-3 col">
+            <input type="date" class="form-control" id="floatingInput">
+            <label for="floatingInput">Fecha de termino</label>
+          </div>
+          <div class="col mt-3">
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+              <option selected>Estado</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col mt-3 d-grid">
+            <button type="button" class="btn btn-primary buscar-btn">Buscar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!--Body Buttom-->
+
+  <!-- Tabla de resultados -->
+  <div class="container body-buttom mt-5">
+    <div class="row">
+      <div class="col">
+        <table class="table table-striped custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Cliente <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+              <th scope="col" class="text-end">RUT <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+              <th scope="col" class="text-end">Correo electrónico <svg width="24" height="25" viewBox="0 0 24 25"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+              <th scope="col" class="text-end">Teléfono <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+              <th scope="col" class="text-end">Producto <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+              <th scope="col" class="">Fecha <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+              <th scope="col" class="">Estado <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2383 9.06836C17.332 8.97461 17.4375 8.93359 17.5547 8.94531C17.6836 8.94531 17.7949 8.99219 17.8887 9.08594C17.9707 9.16797 18.0059 9.27344 17.9941 9.40234C17.9941 9.51953 17.9531 9.61914 17.8711 9.70117L12.5273 15.0273C12.3867 15.1797 12.2109 15.2559 12 15.2559C11.8008 15.2559 11.625 15.1797 11.4727 15.0273L6.12891 9.70117C6.04688 9.60742 6.00586 9.50195 6.00586 9.38477C6.00586 9.25586 6.04688 9.15039 6.12891 9.06836C6.22266 8.97461 6.32812 8.92773 6.44531 8.92773C6.57422 8.92773 6.67969 8.97461 6.76172 9.06836L12 14.3066L17.2383 9.06836Z"
+                    fill="#231D19" />
+                </svg>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Camila Monsalvez Iturra</th>
+              <td class="text-end">15.234.567-8</td>
+              <td class="text-end">correo@correoelectronico.cl</td>
+              <td class="text-end">+569 123 456 78</td>
+              <td class="text-end">[nombre producto]</td>
+              <td>08/08/2023</td>
+              <td>
+                <div class="pendiente p-1 text-center">Pendiente</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Camila Monsalvez Iturra</th>
+              <td class="text-end">15.234.567-8</td>
+              <td class="text-end">correo@correoelectronico.cl</td>
+              <td class="text-end">+569 123 456 78</td>
+              <td class="text-end">[nombre producto]</td>
+              <td>08/08/2023</td>
+              <td>
+                <div class="contratado p-1 text-white text-center">Contratado</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Camila Monsalvez Iturra</th>
+              <td class="text-end">15.234.567-8</td>
+              <td class="text-end">correo@correoelectronico.cl</td>
+              <td class="text-end">+569 123 456 78</td>
+              <td class="text-end">[nombre producto]</td>
+              <td>08/08/2023</td>
+              <td>
+                <div class="pendiente p-1 text-center">Pendiente</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Camila Monsalvez Iturra</th>
+              <td class="text-end">15.234.567-8</td>
+              <td class="text-end">correo@correoelectronico.cl</td>
+              <td class="text-end">+569 123 456 78</td>
+              <td class="text-end">[nombre producto]</td>
+              <td>08/08/2023</td>
+              <td>
+                <div class="contratado p-1 text-white text-center">Contratado</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Camila Monsalvez Iturra</th>
+              <td class="text-end">15.234.567-8</td>
+              <td class="text-end">correo@correoelectronico.cl</td>
+              <td class="text-end">+569 123 456 78</td>
+              <td class="text-end">[nombre producto]</td>
+              <td>08/08/2023</td>
+              <td>
+                <div class="pendiente p-1 text-center">Pendiente</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Camila Monsalvez Iturra</th>
+              <td class="text-end">15.234.567-8</td>
+              <td class="text-end">correo@correoelectronico.cl</td>
+              <td class="text-end">+569 123 456 78</td>
+              <td class="text-end">[nombre producto]</td>
+              <td>08/08/2023</td>
+              <td>
+                <div class="caducado p-1 text-white text-center">Caducado</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Paginador -->
+        <div class="d-flex justify-content-end">
+          <div>
+
+            <select class="form-select py-2 me-2" style="width: auto; display: inline;"
+              aria-label="Seleccionar cantidad de filas">
+              <option selected>Mostrar 10</option>
+              <option>Mostrar 20</option>
+              <option>Mostrar 30</option>
+            </select>
+          </div>
+
+          <div aria-label="Page navigation">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link p-2" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+                </a>
+              </li>
+              <li class="page-item col-2">
+                <input type="text" class="form-control p-2 text-center" value="1">
+              </li>
+              <li class="page-item py-2 text-center">
+                <span class="px-2">de 99</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link p-2" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container text-end mt-4 g-2 act-buttons ">
+    <button type="button" class="btn btn-outline-secondary fw-bold px-3 py-2">Volver</button>
+  </div>
+  <!--Tabla de resultados fin-->
+
+  <!--Footer-->
+  <section id="footer" class="footer mt-auto py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap align-items-center py-4">
+        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+              src="../../build/img/logo_itau_rgb.svg" /></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+              src="../../build/img/cardif-byn.svg" /></a>
+        </p>
+        <p class="text-footer-1 col-6 justify-content-end">
+          Infórmese sobre la garantía estatal de los depósitos en su banco o
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
+            derechos reservados. Av. Presidente
+            Riesco 5537, Las Condes. Santiago de Chile.
+          </span>
+        </p>
+      </footer>
+    </div>
+  </section>
+  <!--Fin Footer-->
+
+</body>
+
+</html>
