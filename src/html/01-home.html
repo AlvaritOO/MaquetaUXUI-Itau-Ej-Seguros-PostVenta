@@ -21,12 +21,12 @@
   <section id="navBar">
     <div class="container">
       <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 header-bg">
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3 header-bg">
 
         <div>
           <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-w text-decoration-none">
-            <img src="../../src/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
-            <img src="../../src/img/logo-bnp.svg" alt="BNP" class="">
+            <img src="../../build/img/logo-itau.svg" alt="Itaú" class="logo-itau pe-4">
+            <img src="../../build/img/logo-bnp.svg" alt="BNP" class="">
           </a>
         </div>
 
@@ -34,18 +34,32 @@
 
           <a class="nav-link dropdown-toggle log-ejecutivo" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../../src/img/ic_log-ejecutivo.svg">
+            <img src="../../build/img/ic_log-ejecutivo.svg">
             Hola, Leslie
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1873 17.7189L22.3035 13.9056C22.3993 13.8149 22.5224 13.7695 22.6729 13.7695C22.8098 13.7695 22.9329 13.8149 23.0424 13.9056C23.1381 13.9964 23.186 14.1067 23.186 14.2364C23.186 14.3791 23.1381 14.5023 23.0424 14.606L16.803 18.5165C16.6252 18.6722 16.4199 18.75 16.1873 18.75C15.941 18.75 15.7289 18.6722 15.5511 18.5165L9.33227 14.606C9.23649 14.5152 9.1886 14.3985 9.1886 14.2558C9.17492 14.1261 9.21597 14.0094 9.31175 13.9056C9.42121 13.8019 9.55119 13.75 9.7017 13.75C9.83853 13.75 9.96168 13.8019 10.0711 13.9056L16.1873 17.7189Z"
+                fill="#231D19" />
+            </svg>
+
           </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
 
         </div>
 
-        <nav class="navbar navbar-expand-lg nav-itau">
+        <nav class="navbar navbar-expand-lg nav-itau pb-0">
           <div class="container-fluid justify-content-around">
 
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contratar Seguros</a>
+                <a class="nav-link" aria-current="page" href="#">Contratar Seguros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ver Seguros Contratados</a>
@@ -70,30 +84,29 @@
   <!--NavBar fin-->
 
   <!--Contenido-->
-  <main id="contenedor-mayor" class="flex-shrink-0 mt-4">
 
-    <div class="container">
-      <h1 class="">¿Qué vas a hacer?</h1>
-      <h2 class="mb-40">Selecciona alguna de las opciones</h2>
-      <div class="body-buttom">
-        <div class="d-flex align-items-center justify-content-center">
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/biometria.svg">Contratar</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/comprobante.svg">Ver seguros contratados</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/notificación.svg">Denunciar</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/icono-mipanel.svg">Mi
-            panel</a>
-          <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
-              src="../../src/img/logo+tips.svg">Posiciónate como experto</a>
-        </div>
-      </div>
-      <div class="container-fluid text-end mt-4 g-2 act-buttons">
-        <button type="button" class="btn btn-outline-secondary fw-bold">Continuar</button>
+  <div class="container">
+    <h1 class="ps-4 mt-4">¿Qué vas a hacer?</h1>
+    <h2 class="ps-4 mb-40">Selecciona alguna de las opciones</h2>
+    <div class="body-buttom">
+      <div class="d-flex align-items-center justify-content-center">
+        <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
+            src="../../src/img/biometria.svg">Contratar</a>
+        <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img src="../../src/img/comprobante.svg">Ver
+          seguros contratados</a>
+        <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
+            src="../../src/img/notificación.svg">Denunciar</a>
+        <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
+            src="../../src/img/icono-mipanel.svg">Mi
+          panel</a>
+        <a href="#" class="body-buttom-card col-2 me-4 text-center fw-bold"><img
+            src="../../src/img/logo+tips.svg">Posiciónate como experto</a>
       </div>
     </div>
+    <div class="container-fluid text-end mt-4 g-2 act-buttons">
+      <button type="button" class="btn btn-outline-secondary fw-bold">Continuar</button>
+    </div>
+  </div>
 
   </main>
   <!--Contenido fin-->
@@ -121,5 +134,9 @@
   <!--Fin Footer-->
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </html>
