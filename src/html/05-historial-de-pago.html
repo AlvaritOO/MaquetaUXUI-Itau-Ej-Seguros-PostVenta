@@ -180,33 +180,6 @@
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <div class="px-2">
-            <table class="table table-striped table-hover">
-              <tbody>
-                <tr>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">RUT</th>
-                  <th scope="col">Teléfono</th>
-                  <th scope="col">Dirección</th>
-                  <th scope="col">Correo electrónico</th>
-                </tr>
-                <tr>
-                  <td>XXXXXXX XXXXXXX</td>
-                  <td>12.345.678-9</td>
-                  <td>(+569) 98765432</td>
-                  <td>Calle #123</td>
-                  <td>XXXXXXX@XXXXXX.XX</td>
-                </tr>
-                <tr>
-                  <td>XXXXXXX XXXXXXX</td>
-                  <td>12.345.678-9</td>
-                  <td>(+569) 98765432</td>
-                  <td>Calle #123</td>
-                  <td>XXXXXXX@XXXXXX.XX</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
           <div class="divisor mt-5 mb-5 pt-1 pb-4"></div>
 
@@ -218,33 +191,6 @@
             <div class="text ms-2 my-auto"><b>El cliente no posee adicionales asignados a este seguro.</b>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <div class="px-2">
-            <table class="table table-striped table-hover">
-              <tbody>
-                <tr>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">RUT</th>
-                  <th scope="col">Teléfono</th>
-                  <th scope="col">Dirección</th>
-                  <th scope="col">Correo electrónico</th>
-                </tr>
-                <tr>
-                  <td>XXXXXXX XXXXXXX</td>
-                  <td>12.345.678-9</td>
-                  <td>(+569) 98765432</td>
-                  <td>Calle #123</td>
-                  <td>XXXXXXX@XXXXXX.XX</td>
-                </tr>
-                <tr>
-                  <td>XXXXXXX XXXXXXX</td>
-                  <td>12.345.678-9</td>
-                  <td>(+569) 98765432</td>
-                  <td>Calle #123</td>
-                  <td>XXXXXXX@XXXXXX.XX</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </section>
 
@@ -388,7 +334,17 @@
             </svg>
           </a>
           <div class="col-7 mt-4 mb-3">
-            <button type="button" class="btn btn-outline-secondary col-4 fw-bold">Renunciar a este seguro</button></a>
+            <button type="button" class="btn btn-primary fw-bold px-4" id="continuarButton" disabled>Renunciar a este seguro *</button>
+          </div>
+          <div class="alert alert-danger text-black alert-dismissible fade show mt-2 d-flex ps-2" role="alert">
+            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.6328 20.3525C26.1641 21.2744 26.1562 22.1963 25.6094 23.1182C25.0781 24.04 24.2812 24.501 23.2188 24.501H8.78125C7.71875 24.501 6.91406 24.04 6.36719 23.1182C5.83594 22.1963 5.83594 21.2744 6.36719 20.3525L14.2891 6.50098C14.6641 5.8291 15.2344 5.49316 16 5.49316C16.7656 5.49316 17.3359 5.8291 17.7109 6.50098L25.6328 20.3525ZM15.5078 12.501V18.501H16.4922V12.501H15.5078ZM16 21.0088C16.2031 21.0088 16.375 20.9385 16.5156 20.7979C16.6719 20.6416 16.75 20.4619 16.75 20.2588C16.75 20.04 16.6719 19.8604 16.5156 19.7197C16.375 19.5791 16.2031 19.5088 16 19.5088C15.7969 19.5088 15.6172 19.5791 15.4609 19.7197C15.3203 19.8604 15.25 20.04 15.25 20.2588C15.25 20.4619 15.3203 20.6416 15.4609 20.7979C15.6172 20.9385 15.7969 21.0088 16 21.0088Z" fill="#B71C1C"/>
+              </svg>
+              
+            <div class="text ms-2 my-auto"><b>*Los seguros de desgravamen no pueden ser eliminado por este medio, ya que se requieren
+              prerrequisitos para ejecutar la renuncia.</b>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         </div>
       </div>
