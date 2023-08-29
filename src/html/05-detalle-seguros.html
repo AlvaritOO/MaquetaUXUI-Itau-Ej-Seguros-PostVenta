@@ -128,9 +128,9 @@
 
           <h1 class="mt-4 mb-4">Coberturas</h1>
           <div class="px-2">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped">
               <tbody>
-                <tr>
+                <tr class="table-head">
                   <th scope="col">Tipo de cobertura</th>
                   <th scope="col">Tope</th>
                 </tr>
@@ -138,7 +138,7 @@
                   <td>Vida</td>
                   <td>UF 90</td>
                 </tr>
-                <tr>
+                <tr class="table-body">
                   <td>Incapacidad Permanente</td>
                   <td>UF 90</td>
                 </tr>
@@ -146,7 +146,7 @@
                   <td>Muerte Accidental</td>
                   <td>UF 90</td>
                 </tr>
-                <tr>
+                <tr class="table-body">
                   <td>Otros</td>
                   <td>UF 90</td>
                 </tr>
@@ -173,9 +173,9 @@
         <section>
           <h1 class="mb-3">Datos de beneficiarios</h1>
           <div class="px-2">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped">
               <tbody>
-                <tr>
+                <tr class="table-head">
                   <th scope="col">Nombre</th>
                   <th scope="col">RUT</th>
                   <th scope="col">Teléfono</th>
@@ -189,7 +189,7 @@
                   <td>Calle #123</td>
                   <td>XXXXXXX@XXXXXX.XX</td>
                 </tr>
-                <tr>
+                <tr class="table-body">
                   <td>XXXXXXX XXXXXXX</td>
                   <td>12.345.678-9</td>
                   <td>(+569) 98765432</td>
@@ -204,9 +204,9 @@
 
           <h1 class="mb-3">Datos de adicionales</h1>
           <div class="px-2">
-            <table class="table table-striped table-hover">
+            <table class="table table-striped">
               <tbody>
-                <tr>
+                <tr class="table-head">
                   <th scope="col">Nombre</th>
                   <th scope="col">RUT</th>
                   <th scope="col">Teléfono</th>
@@ -220,7 +220,7 @@
                   <td>Calle #123</td>
                   <td>XXXXXXX@XXXXXX.XX</td>
                 </tr>
-                <tr>
+                <tr class="table-body">
                   <td>XXXXXXX XXXXXXX</td>
                   <td>12.345.678-9</td>
                   <td>(+569) 98765432</td>
@@ -254,14 +254,14 @@
           </div>
 
           <div class="justify-content-end mt-3 col">
-            <button type="button" class="btn btn-success text-secondary col-3">Buscar</button>
+            <button type="button" class="btn btn-nivel-tres col-3">Buscar</button>
           </div>
         </section>
 
         <div class="px-2 mt-5">
-          <table class="table table-striped table-hover">
+          <table class="table table-striped ">
             <tbody>
-              <tr>
+              <tr class="table-head">
                 <th scope="col">Fecha</th>
                 <th scope="col">Nombre del movimiento</th>
                 <th scope="col">Medio de pago</th>
@@ -279,7 +279,7 @@
                   <div class="bg-blue text-white p-1 px-2 text-center border-estado">En revisión</div>
                 </td>
               </tr>
-              <tr>
+              <tr class="table-body">
                 <td><b>15/06/23</b></td>
                 <td>Recaudación del seguro {nombre del seguro}</td>
                 <td>Cargo en cuenta corriente</td>
@@ -299,7 +299,7 @@
                   <div class="bg-danger text-white p-1 px-2 text-center border-estado">Morosa</div>
                 </td>
               </tr>
-              <tr>
+              <tr class="table-body">
                 <td><b>15/04/23</b></td>
                 <td>Recaudación del seguro {nombre del seguro}</td>
                 <td>Cargo en cuenta corriente</td>
@@ -319,7 +319,7 @@
                   <div class="bg-danger text-white p-1 px-2 text-center border-estado">Morosa</div>
                 </td>
               </tr>
-              <tr>
+              <tr class="table-body">
                 <td><b>15/02/23</b></td>
                 <td>Recaudación del seguro {nombre del seguro}</td>
                 <td>Cargo en cuenta corriente</td>
@@ -476,27 +476,28 @@
       </div>
     </div>
   </div>
+
   <!--Footer-->
   <section id="footer" class="footer mt-auto py-3">
     <div class="container">
       <footer class="d-flex flex-wrap align-items-center py-4">
         <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
           <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-              src="../../build/img/logo_itau_rgb.svg"></a>
-          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif" src="../../build/img/cardif-byn.svg"></a>
+              src="../../build/img/logo_itau_rgb.svg" /></a>
+          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+              src="../../build/img/cardif-byn.svg" /></a>
         </p>
         <p class="text-footer-1 col-6 justify-content-end">
           Infórmese sobre la garantía estatal de los depósitos en su banco o
-          en www.cmfchile.cl <br /><span class="text-footer-2 col-8
-            justify-content-end">© 2022 Banco Itaú. Todos los derechos
-            reservados. Av. Presidente Riesco 5537, Las Condes. Santiago de
-            Chile. </span>
+          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
+            derechos reservados. Av. Presidente
+            Riesco 5537, Las Condes. Santiago de Chile.
+          </span>
         </p>
       </footer>
     </div>
   </section>
   <!--Fin Footer-->
-
 
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

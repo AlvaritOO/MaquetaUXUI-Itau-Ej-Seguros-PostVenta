@@ -1,404 +1,403 @@
-@use '../custom' as *;
+@use "../custom" as *;
 
 body {
-    font-family: "ItauRegular";
-    //src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
-    background-color: $neutral;
+  font-family: "ItauRegular";
+  //src: url("../../src/fonts/ItauTextPro_W_Rg.woff2");
+  background-color: $neutral;
 }
 
-h1{
-    font-family: 'ItauDisplay', sans-serif; /*Specify your font name here*/
-    font-size: 28px;
-
+h1 {
+  font-family: "ItauDisplay", sans-serif; /*Specify your font name here*/
+  font-size: 28px;
 }
 
-h2{
-    font-size: 22px;
-    color: $textos;
+h2 {
+  font-size: 22px;
+  color: $textos;
 }
 
-span, p, ul, li {
-    font-family: 'ItauRegular';
+span,
+p,
+ul,
+li {
+  font-family: "ItauRegular";
 }
-
 
 .form-floating > label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0.6rem 1.75rem !important;
-    overflow: hidden;
-    text-align: start;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    pointer-events: none;
-    border: 1px solid transparent;
-    transform-origin: 0 0;
-    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem 1.75rem !important;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
 
 .modal-title {
-    margin-bottom: 0;
-    line-height: var(--bs-modal-title-line-height);
-    color: $naranja;
+  margin-bottom: 0;
+  line-height: var(--bs-modal-title-line-height);
+  color: $naranja;
 }
 
 button.cerrar-modal {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
 button.cerrar-modal-alerta {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    padding: 1.25rem 1rem;
-    background-color: transparent;
-    border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+  background-color: transparent;
+  border: none;
 }
 
 .accordion-item.itau {
-    margin-bottom: 8px;
-    border: 1px solid $bordes-card !important;
-    border-radius: 8px;
-
+  margin-bottom: 8px;
+  border: 1px solid $bordes-card !important;
+  border-radius: 8px;
 }
 
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
-    border-radius: 8px !important;
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 8px !important;
 }
 
-.color-primary{
-    color: $naranja;
+.color-primary {
+  color: $naranja;
 }
 
-.color-info{
-    color: $info;
+.color-info {
+  color: $info;
 }
 
-.color-verde{
-    color: $verde;
+.color-verde {
+  color: $verde;
 }
 
-.color-warning{
-    color: #F1AE2F;
+.color-warning {
+  color: #f1ae2f;
 }
 
 .alert-verde {
-    border-left: 4px solid #008859;
-    background-color: #DEF0E9;
+  border-left: 4px solid #008859;
+  background-color: #def0e9;
 }
 
 .alert-warning {
-    border-left: 4px solid #F1AE2F;
-    background-color: #FCEBCB;
+  border-left: 4px solid #f1ae2f;
+  background-color: #fcebcb;
 }
 
 .alert-danger {
-    border-left: 4px solid #B71C1C;
-    background-color: #F6E1E1;
+  border-left: 4px solid #b71c1c;
+  background-color: #f6e1e1;
 }
 
 .alert-info {
-    border-left: 4px solid #007AB7;
-    background-color: #DEEEF6;
+  border-left: 4px solid #007ab7;
+  background-color: #deeef6;
 }
 
-.sombra-itau1{
-    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+.sombra-itau1 {
+  box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
 }
 
 a.card-box {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-plan {
-    border: 1px solid $bordes-card;
-    border-radius: 8px;
+  border: 1px solid $bordes-card;
+  border-radius: 8px;
 }
 
 .card-plan.sombra-itau1.active {
-    border: 3px solid $naranja;
+  border: 3px solid $naranja;
 }
 
 .card-plan.active .numero-plan {
-    background-color: $naranja;
-    color: $light;
+  background-color: $naranja;
+  color: $light;
 }
 
-.numero-plan{
-    color: $textos;
-    background-color: #EFE9E5;
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 12px 0px 12px 0px;
-    position: relative;
-    top: 5px;
+.numero-plan {
+  color: $textos;
+  background-color: #efe9e5;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 12px 0px 12px 0px;
+  position: relative;
+  top: 5px;
 }
 
 img.check-plan {
-    position: relative;
-    top: 3px;
-    width: 100%;
-    height: 25px;
-    padding-left: 90%;
+  position: relative;
+  top: 3px;
+  width: 100%;
+  height: 25px;
+  padding-left: 90%;
 }
 
 card.card-box {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .card-plan.active .item-destacado {
-    background-color: #89837F;
-    color: #FFFFFF;
+  background-color: #89837f;
+  color: #ffffff;
 }
 
-.titulo-seguro{
-    color: $naranja;
-    font-size: 20px;
+.titulo-seguro {
+  color: $naranja;
+  font-size: 20px;
 }
 
 .item-destacado {
-    padding: 12px 6px;
-    margin: 8px 25px 23px 25px;
-    background-color: #EFE9E5;
-    border-radius: 15px;
-    color: #56504C;
-    font-size: 16px;
+  padding: 12px 6px;
+  margin: 8px 25px 23px 25px;
+  background-color: #efe9e5;
+  border-radius: 15px;
+  color: #56504c;
+  font-size: 16px;
 }
 
 .pre-text {
-    font-size: 18px;
-    font-weight: bolder;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
-.act-buttons{
-    margin-bottom: 72px;
+.act-buttons {
+  margin-bottom: 72px;
 }
 
 a:hover {
-    color: var(--bs-link-hover-color);
+  color: var(--bs-link-hover-color);
 }
 
-.mb-20{
-    margin-bottom: 20px;
+.mb-20 {
+  margin-bottom: 20px;
 }
 
-.mb-40{
-    margin-bottom: 40px;
+.mb-40 {
+  margin-bottom: 40px;
 }
 
-.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
-    border-radius: 8px !important;
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 8px !important;
 }
 
-section#contenedor-mayor{
-    width: auto;
-    height: auto;
-
+section#contenedor-mayor {
+  width: auto;
+  height: auto;
 }
 
-.body-buttom{
-    padding: 24px;
-    height: auto;
-    background: $light;
-    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
-    border-radius: 8px;
+.body-buttom {
+  padding: 24px;
+  height: auto;
+  background: $light;
+  box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+  border-radius: 8px;
 }
 
 .body-buttom-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 24px;
-    gap: 22px;
-    text-decoration: none;
-    width: 189px;
-    height: 153px;
-    background: $light;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
-    border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 22px;
+  text-decoration: none;
+  width: 189px;
+  height: 153px;
+  background: $light;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .btn-primary {
-    color: $white;
-    border: 2px solid $naranja-hover;
+  color: $white;
+  border: 2px solid $naranja-hover;
 }
 
 .buscar-btn {
-    height: 47px;
+  height: 47px;
 }
 
 .buscar-btn.active {
-    border-color: $secondary;
+  border-color: $secondary;
 }
 
 .label-float {
-    position: relative;
-    top: 18px;
-    left: calc(8px);
-    color: $textos;
-    font-weight: 700;
-    font-size: 14px;
-    padding: 0 4px;
-    background-color: $light;
+  position: relative;
+  top: 18px;
+  left: calc(8px);
+  color: $textos;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 4px;
+  background-color: $light;
 }
 
 .card-planes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 24px;
-    gap: 22px;
-    text-decoration: none;
-    width: 300px;
-    height: 368px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
-    border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  gap: 22px;
+  text-decoration: none;
+  width: 300px;
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.16), 0px 2px 6px rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 
-    background: #FFFFFF;
-    border: 1px solid #EC7000;
+  background: #ffffff;
+  border: 1px solid #ec7000;
 }
 
 .divisor {
-    height: 2px;
-    border-bottom: 2px solid #e2e2e2;
-    margin: 20px 0px;
+  height: 2px;
+  border-bottom: 2px solid #e2e2e2;
+  margin: 20px 0px;
 }
 
-
 .rango-pesos::before {
-    content: "$";
+  content: "$";
 }
 
 .rango-uf::after {
-    content: "UF";
+  content: "UF";
 }
 
 small.rango-uf {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .bubble {
-    background: $naranja;
-    color: $light;
-    padding: 4px 12px;
-    position: relative;
-    border-radius: 4px;
-    left: 50%;
-    -webkit-transform: translateX(-382%);
-    transform: translateX(-382%);
+  background: $naranja;
+  color: $light;
+  padding: 4px 12px;
+  position: relative;
+  border-radius: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-382%);
+  transform: translateX(-382%);
 }
 
 .bubble::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: $naranja;
-    top: -1px;
-    left: 50%;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: $naranja;
+  top: -1px;
+  left: 50%;
 }
 
 a.btn-menos-monto {
-    position: relative;
-    left: -59px;
-    top: 85px;
+  position: relative;
+  left: -59px;
+  top: 85px;
 }
 
 a.btn-mas-monto {
-    position: relative;
-    top: 88px;
-    left: 65px;
+  position: relative;
+  top: 88px;
+  left: 65px;
 }
 
 p.rango-pesos {
-    margin-bottom: 0px;
-    font-size: 14px;
-    color: red;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: red;
 }
 
 p.uf-rango {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .input-uf {
-    position: relative;
-    top: 101px;
-    right: -38px;
+  position: relative;
+  top: 101px;
+  right: -38px;
 }
 
 .simulacion-gris {
-    margin-top: 46px;
-    background-color: #EFE9E5;
-    border-radius: 8px;
-    padding: 16px;
+  margin-top: 46px;
+  background-color: #efe9e5;
+  border-radius: 8px;
+  padding: 16px;
 }
 
 .coberturas-adicionales-content {
-    height: 114px;
+  height: 114px;
 }
 
 .custom-table thead th {
-    --bs-table-bg: #EFE9E5 !important;
+  --bs-table-bg: #efe9e5 !important;
 }
 
 .contratado {
-    background-color: #008859;
+  background-color: #008859;
 }
 
 .pendiente {
-    background-color: #F1AE2F;
+  background-color: #f1ae2f;
 }
 
 .caducado {
-    background-color: #56504C;
+  background-color: #56504c;
 }
 
 //styling
 $borderWidth: 3px;
 $animationTime: 1.5s;
-$border-color-default: #D9D3CF;
-$border-color-fill: #EC7000;
+$border-color-default: #d9d3cf;
+$border-color-fill: #ec7000;
 $size: 40px;
 
 //Create how many steps
-$howManySteps: 20; //this needs to be even. 
+$howManySteps: 20; //this needs to be even.
 //for fun try using 20 and changine in the HTML the data-percentage to 15 or 85
 
-body{
-  background-color:#FAF7F5;
+body {
+  background-color: #faf7f5;
 }
 
-.row.progreso{
+.row.progreso {
   height: 56px;
-  background-color:#fff;
+  background-color: #fff;
   padding: 8px;
   border-bottom: 2px solid #939598;
-  margin-top:25px;
-  margin-bottom:25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.title-seccion{
-padding: 10px 51px;
-    font-size: 16px;
-    font-weight: bolder;
+.title-seccion {
+  padding: 10px 51px;
+  font-size: 16px;
+  font-weight: bolder;
 }
-
 
 .progress {
   width: $size;
@@ -441,8 +440,8 @@ padding: 10px 51px;
   }
   .progress-left .progress-bar {
     left: 100%;
-    border-top-right-radius: calc($size / 2);;
-    border-bottom-right-radius: calc($size / 2);;
+    border-top-right-radius: calc($size / 2);
+    border-bottom-right-radius: calc($size / 2);
     border-left: 0;
     -webkit-transform-origin: center left;
     transform-origin: center left;
@@ -452,8 +451,8 @@ padding: 10px 51px;
     right: 0;
     .progress-bar {
       left: -100%;
-      border-top-left-radius: calc($size / 2);;
-      border-bottom-left-radius: calc($size / 2);;
+      border-top-left-radius: calc($size / 2);
+      border-bottom-left-radius: calc($size / 2);
       border-right: 0;
       -webkit-transform-origin: center right;
       transform-origin: center right;
@@ -469,7 +468,7 @@ padding: 10px 51px;
     align-items: center;
     justify-content: center;
     height: 80%;
-    color: #EC7000;
+    color: #ec7000;
     //font-family: $work-sans;
     font-weight: 300;
     div {
@@ -486,118 +485,152 @@ padding: 10px 51px;
 Due to the split circle of progress-left and progress right, we must use the animations on each side. 
 */
 @for $i from 1 through $howManySteps {
-	$stepName: ($i*calc(100 / $howManySteps));
+  $stepName: ($i * calc(100 / $howManySteps));
 
-	//animation only the left side if below 50%
-	@if $i <= calc($howManySteps / 2) { 
-		.progress[data-percentage="#{$stepName}"] {
-			.progress-right .progress-bar {
-				 animation: loading-#{$i} $animationTime linear forwards;
-			}
-			.progress-left .progress-bar {animation: 0;}
-		}
-	}
-	//animation only the right side if above 50%
-	@if $i > calc($howManySteps / 2)  {  
-		.progress[data-percentage="#{$stepName}"] {
-			.progress-right .progress-bar {
-				animation: loading-#{calc($howManySteps / 2)} $animationTime linear forwards; //set the animation to longest animation
-			}
-			.progress-left .progress-bar {
-      animation: loading-#{$i - calc($howManySteps / 2)} $animationTime linear forwards $animationTime;
+  //animation only the left side if below 50%
+  @if $i <= calc($howManySteps / 2) {
+    .progress[data-percentage="#{$stepName}"] {
+      .progress-right .progress-bar {
+        animation: loading-#{$i} $animationTime linear forwards;
+      }
+      .progress-left .progress-bar {
+        animation: 0;
+      }
     }
-		}
-	}
+  }
+  //animation only the right side if above 50%
+  @if $i > calc($howManySteps / 2) {
+    .progress[data-percentage="#{$stepName}"] {
+      .progress-right .progress-bar {
+        animation: loading-#{calc($howManySteps / 2)}
+          $animationTime
+          linear
+          forwards; //set the animation to longest animation
+      }
+      .progress-left .progress-bar {
+        animation: loading-#{$i -
+          calc($howManySteps / 2)}
+          $animationTime
+          linear
+          forwards
+          $animationTime;
+      }
+    }
+  }
 }
 
 //animation
-@for $i from 1 through calc($howManySteps / 2) { 
-	$degrees: calc(180 / ($howManySteps / 2));
-	$degrees: ($degrees*$i);
-	@keyframes loading-#{$i}{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+@for $i from 1 through calc($howManySteps / 2) {
+  $degrees: calc(180 / ($howManySteps / 2));
+  $degrees: ($degrees * $i);
+  @keyframes loading-#{$i} {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
-    100%{
-        -webkit-transform: rotate($degrees);
-			transform: rotate(#{$degrees}deg);
+    100% {
+      -webkit-transform: rotate($degrees);
+      transform: rotate(#{$degrees}deg);
     }
-	}
+  }
 }
 //additional styling
 .progress {
-		margin-bottom: 1em;
-	}
+  margin-bottom: 1em;
+}
 
 .accordion {
-    --bs-accordion-active-bg: #F3F0EF;
+  --bs-accordion-active-bg: #f3f0ef;
 }
 
 .accordion-custom-width {
-    width: 1016px !important;
+  width: 1016px !important;
 }
 
 .bg-neutral {
-    background-color: $neutral;
+  background-color: $neutral;
 }
 
 .card-noactive {
-    border: 2px solid $neutral;
+  border: 2px solid $neutral;
 }
 
 .cardplan-size {
-    max-width: 348px !important;
-    border-radius: 8px;
+  max-width: 348px !important;
+  border-radius: 8px;
 }
 
 .cobertura-fs {
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .shadow-active {
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.18), 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.18),
+    0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .text-textos {
-    color: $textos;
+  color: $textos;
 }
 
 .coberturas {
-    max-width: 902px;
+  max-width: 902px;
 }
 
 .contrato {
-    max-width: 1000px;
+  max-width: 1000px;
 }
 
 .cancelado {
-    background-color: #FCB6B6;
+  background-color: #fcb6b6;
 }
 
 .en-proceso-r {
-    background-color: #FCEBCB;
-    color: #CA932B;
+  background-color: #fcebcb;
+  color: #ca932b;
 }
 
 .border-estado {
-    border-radius: 2px;
+  border-radius: 2px;
 }
 
 .btn-disabled {
-    background-color: #D9D3CF !important;
-    color: #56504C !important;
-    border-color: #D9D3CF !important;
+  background-color: #d9d3cf !important;
+  color: #56504c !important;
+  border-color: #d9d3cf !important;
 }
 
 .btn-close-orange {
-    color: #EC7000;
+  color: #ec7000;
 }
 
 .bg-green {
-    background-color: #4CAC8B;
+  background-color: #4cac8b;
 }
 
 .bg-blue {
-    background-color: #003399;
+  background-color: #003399;
+}
+
+.btn-outline-secondary:hover > svg > path {
+  fill: #fff;
+}
+
+.btn.btn-nivel-tres {
+  border-radius: 8px;
+  background-color: #e7eaf7;
+  color: #003399;
+
+  &:hover {
+    background-color: #c2c9ea;
+    color: #003399;
+  }
+}
+
+.table-head {
+  background-color: #d9d3cf;
+}
+
+.table-body {
+  background-color: #efe9e5;
 }

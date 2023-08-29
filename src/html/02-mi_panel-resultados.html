@@ -116,7 +116,7 @@
             </select>
           </div>
           <div class="col mt-3 d-grid">
-            <button type="button" class="btn btn-primary buscar-btn">Buscar coincidencias</button>
+            <button type="button" class="btn btn-primary buscar-btn">Buscar</button>
           </div>
         </div>
 
@@ -131,8 +131,8 @@
     <div class="row">
       <div class="col">
         <table class="table table-striped custom-table">
-          <thead>
-            <tr>
+
+            <tr class="table-head">
               <th scope="col">Cliente <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -183,8 +183,7 @@
                 </svg>
               </th>
             </tr>
-          </thead>
-          <tbody>
+
             <tr>
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
@@ -196,7 +195,7 @@
                 <div class="pendiente p-1 text-center">Pendiente</div>
               </td>
             </tr>
-            <tr>
+            <tr class="table-body">
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
               <td class="text-end">correo@correoelectronico.cl</td>
@@ -218,7 +217,7 @@
                 <div class="pendiente p-1 text-center">Pendiente</div>
               </td>
             </tr>
-            <tr>
+            <tr class="table-body">
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
               <td class="text-end">correo@correoelectronico.cl</td>
@@ -240,7 +239,7 @@
                 <div class="pendiente p-1 text-center">Pendiente</div>
               </td>
             </tr>
-            <tr>
+            <tr class="table-body">
               <th scope="row">Camila Monsalvez Iturra</th>
               <td class="text-end">15.234.567-8</td>
               <td class="text-end">correo@correoelectronico.cl</td>
@@ -253,40 +252,39 @@
             </tr>
           </tbody>
         </table>
-        <!-- Paginador -->
-        <div class="d-flex justify-content-end">
-          <div>
+  <!-- Paginador -->
+  <div class="d-flex justify-content-end">
 
-            <select class="form-select py-2 me-2" style="width: auto; display: inline;"
-              aria-label="Seleccionar cantidad de filas">
-              <option selected>Mostrar 10</option>
-              <option>Mostrar 20</option>
-              <option>Mostrar 30</option>
-            </select>
-          </div>
+    <div aria-label="Page navigation">
 
-          <div aria-label="Page navigation">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link p-2" href="#" aria-label="Previous">
-                  <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
-                </a>
-              </li>
-              <li class="page-item col-2">
-                <input type="text" class="form-control p-2 text-center" value="1">
-              </li>
-              <li class="page-item py-2 text-center">
-                <span class="px-2">de 99</span>
-              </li>
-              <li class="page-item">
-                <a class="page-link p-2" href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
+      <ul class="pagination justify-content-end align-items-end">
+        <div>
+          <select class="form-select py-2 me-2" style="width: auto; display: inline;"
+            aria-label="Seleccionar cantidad de filas">
+            <option selected>Mostrar 6</option>
+            <option>Mostrar 10</option>
+            <option>Mostrar 20</option>
+          </select>
         </div>
+        <li class="page-item ms-1">
+          <a class="page-link p-2 border-0 text-black" href="#" aria-label="Previous">
+            <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+          </a>
+        </li>
+        <li class="page-item col-1" >
+          <input type="text" class="form-control text-center px-2" value="1" disabled>
+        </li>                    
+        <li class="page-item py-2 text-center">
+          <span class="px-2">de 3</span>
+        </li>
+        <li class="page-item">
+          <a class="page-link p-2 border-0 text-black" href="#" aria-label="Next">
+            <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
       </div>
     </div>
@@ -296,27 +294,27 @@
   </div>
   <!--Tabla de resultados fin-->
 
-  <!--Footer-->
-  <section id="footer" class="footer mt-auto py-3">
-    <div class="container">
-      <footer class="d-flex flex-wrap align-items-center py-4">
-        <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
-          <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
-              src="../../build/img/logo_itau_rgb.svg" /></a>
-          <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
-              src="../../build/img/cardif-byn.svg" /></a>
-        </p>
-        <p class="text-footer-1 col-6 justify-content-end">
-          Infórmese sobre la garantía estatal de los depósitos en su banco o
-          en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
-            derechos reservados. Av. Presidente
-            Riesco 5537, Las Condes. Santiago de Chile.
-          </span>
-        </p>
-      </footer>
-    </div>
-  </section>
-  <!--Fin Footer-->
+<!--Footer-->
+<section id="footer" class="footer mt-auto py-3">
+  <div class="container">
+    <footer class="d-flex flex-wrap align-items-center py-4">
+      <p class="col-md-4 col-12 col-sm-2 col-lg-4 mb-0 text-muted">
+        <a href="#"><img class="col-2 logo-footer me-4" alt="BNP Paribas Cardif"
+            src="../../build/img/logo_itau_rgb.svg" /></a>
+        <a href="#"><img class="col-5 logo-footer" alt="BNP Paribas Cardif"
+            src="../../build/img/cardif-byn.svg" /></a>
+      </p>
+      <p class="text-footer-1 col-6 justify-content-end">
+        Infórmese sobre la garantía estatal de los depósitos en su banco o
+        en www.cmfchile.cl <br /><span class="text-footer-2 col-8 justify-content-end">© 2022 Banco Itaú. Todos los
+          derechos reservados. Av. Presidente
+          Riesco 5537, Las Condes. Santiago de Chile.
+        </span>
+      </p>
+    </footer>
+  </div>
+</section>
+<!--Fin Footer-->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

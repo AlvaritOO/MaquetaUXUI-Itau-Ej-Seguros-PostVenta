@@ -1,22 +1,21 @@
-@use '../custom' as *;
+@use "../custom" as *;
 
 section#footer {
-    background-color: $naranja;
+  background-color: $naranja;
 }
 
-
-.text-footer-1{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
+.text-footer-1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
 }
 
-.text-footer-2{
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 19px;
-    color: #FFFFFF;
+.text-footer-2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
 }

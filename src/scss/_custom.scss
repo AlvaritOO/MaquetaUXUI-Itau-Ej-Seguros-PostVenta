@@ -78,8 +78,14 @@ $headings-color: $titulo-cabecera;
 $itautextpro: "itauRegular";
 $itaudisplay: "ItauDisplay";
 
-//alertas
-$alert-border-radius: 8px;
+//border radius
+$alert-border-radius: 4px;
+
+$input-border-radius: 4px;
+
+$form-select-border-radius:  4px;
+$form-select-border-radius-lg:    4px;
+$form-select-line-height: 30px;
 
 //barras de progreso
 $position-values: (
