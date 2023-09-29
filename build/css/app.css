@@ -11673,8 +11673,22 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #003399;
 }
 
-.btn-outline-secondary:hover img{
+.btn-outline-secondary {
+  background-color: #fff;
+  color: #003399;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #003399;
+}
+
+.btn-outline-secondary:hover img {
   background-color: white;
+}
+
+.alert-renuncia {
+  width: 40px;
+  height: 40px;
 }
 
 .btn.btn-nivel-tres {
