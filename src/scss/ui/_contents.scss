@@ -612,19 +612,6 @@ Due to the split circle of progress-left and progress right, we must use the ani
   background-color: #003399;
 }
 
-.btn-outline-secondary {
-  background-color: #fff;
-  color: #003399;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #003399;
-}
-
-.btn-outline-secondary:hover img {
-  background-color: white;
-}
-
 .alert-renuncia{
   width: 40px;
   height: 40px;
@@ -657,4 +644,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .alerta-danger{
   width: 35px;
   height: 35px;
+}
+
+.btn-outline-secondary:hover > svg > path {
+  fill: #fff;
 }
